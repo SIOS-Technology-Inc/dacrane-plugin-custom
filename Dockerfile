@@ -9,7 +9,7 @@ COPY . .
 RUN go build -o /usr/local/bin/plugin main.go
 RUN chmod +x /usr/local/bin/plugin
 
-FROM alpine:3.19
+FROM docker:24.0.7-cli-alpine3.18
 
 WORKDIR /work
 
